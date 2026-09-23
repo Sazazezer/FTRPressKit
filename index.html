@@ -1,1 +1,1107 @@
-hello there
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Feeding The Velociraptors — Press Kit</title>
+
+    <meta name="description" content="Press kit for Feeding The Velociraptors by workHate Inc.">
+    <meta property="og:title" content="Feeding The Velociraptors — Press Kit">
+    <meta property="og:description" content="Press kit for Feeding The Velociraptors by workHate Inc.">
+    <meta property="og:type" content="website">
+
+    <style>
+        :root {
+            --background: #101010;
+            --background-light: #181818;
+            --background-lighter: #222;
+            --text: #eeeeee;
+            --text-muted: #999;
+            --accent: #d8a43b;
+            --accent-hover: #f0bd4f;
+            --border: #303030;
+            --max-width: 1100px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: var(--background);
+            color: var(--text);
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* -------------------------
+           HEADER
+        ------------------------- */
+
+        header {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.55),
+                    rgba(0, 0, 0, 0.85)
+                ),
+                url("assets/hero.jpg") center / cover no-repeat;
+
+            padding: 80px 20px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero-logo {
+            max-width: 650px;
+            margin: 0 auto 30px;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 7vw, 5.5rem);
+            line-height: 1;
+            margin: 0 0 20px;
+            text-transform: uppercase;
+            letter-spacing: -0.04em;
+        }
+
+        .hero-tagline {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 1.25rem;
+            color: #ccc;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 22px;
+            margin: 5px;
+            border: 1px solid var(--accent);
+            background: var(--accent);
+            color: #111;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: var(--accent-hover);
+            color: #111;
+            text-decoration: none;
+        }
+
+        .button.secondary {
+            background: transparent;
+            color: var(--accent);
+        }
+
+        /* -------------------------
+           NAVIGATION
+        ------------------------- */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background: rgba(16, 16, 16, 0.95);
+            border-bottom: 1px solid var(--border);
+
+            backdrop-filter: blur(10px);
+        }
+
+        nav .nav-inner {
+            max-width: var(--max-width);
+            margin: auto;
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            display: block;
+            padding: 15px 18px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        /* -------------------------
+           GENERAL
+        ------------------------- */
+
+        main {
+            max-width: var(--max-width);
+            margin: auto;
+            padding: 0 25px;
+        }
+
+        section {
+            padding: 90px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            margin: 0 0 40px;
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        h3 {
+            margin-top: 35px;
+            font-size: 1.3rem;
+        }
+
+        p {
+            color: #ccc;
+        }
+
+        .lead {
+            font-size: 1.25rem;
+            color: #ddd;
+        }
+
+        /* -------------------------
+           FACTSHEET
+        ------------------------- */
+
+        .factsheet {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1px;
+            background: var(--border);
+            border: 1px solid var(--border);
+        }
+
+        .fact {
+            padding: 20px;
+            background: var(--background-light);
+        }
+
+        .fact-label {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .fact-value {
+            color: var(--text);
+        }
+
+        /* -------------------------
+           TWO COLUMN
+        ------------------------- */
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        /* -------------------------
+           FEATURES
+        ------------------------- */
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .feature {
+            padding: 25px;
+            background: var(--background-light);
+            border: 1px solid var(--border);
+        }
+
+        .feature h3 {
+            margin-top: 0;
+        }
+
+        /* -------------------------
+           VIDEO
+        ------------------------- */
+
+        .video {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            margin-bottom: 30px;
+            background: #000;
+        }
+
+        .video iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* -------------------------
+           IMAGE GALLERY
+        ------------------------- */
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .gallery a {
+            display: block;
+            overflow: hidden;
+            background: var(--background-light);
+        }
+
+        .gallery img {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            transition: transform 0.25s ease;
+        }
+
+        .gallery a:hover img {
+            transform: scale(1.03);
+        }
+
+        /* -------------------------
+           DOWNLOADS
+        ------------------------- */
+
+        .downloads {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .download {
+            padding: 25px;
+            background: var(--background-light);
+            border: 1px solid var(--border);
+        }
+
+        .download h3 {
+            margin-top: 0;
+        }
+
+        /* -------------------------
+           CONTACT
+        ------------------------- */
+
+        .contact {
+            padding: 40px;
+            background: var(--background-light);
+            border: 1px solid var(--border);
+        }
+
+        /* -------------------------
+           FOOTER
+        ------------------------- */
+
+        footer {
+            max-width: var(--max-width);
+            margin: auto;
+            padding: 50px 25px;
+            color: var(--text-muted);
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        /* -------------------------
+           MOBILE
+        ------------------------- */
+
+        @media (max-width: 700px) {
+
+            header {
+                min-height: 60vh;
+            }
+
+            nav .nav-inner {
+                justify-content: flex-start;
+                overflow-x: auto;
+                flex-wrap: nowrap;
+            }
+
+            nav a {
+                white-space: nowrap;
+                padding: 12px;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .factsheet,
+            .two-column,
+            .features,
+            .downloads {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+
+    <header id="top">
+
+        <div class="hero-content">
+
+            <!--
+                Replace this with your actual logo if you have one.
+
+                Example:
+                <img src="assets/logo.png"
+                     alt="Feeding The Velociraptors"
+                     class="hero-logo">
+            -->
+
+            <h1 class="hero-title">
+                Feeding The Velociraptors
+            </h1>
+
+            <p class="hero-tagline">
+                A retro-horror comedy about dinosaurs, bad decisions,
+                and making sure nobody finds out what happened.
+            </p>
+
+            <a
+                class="button"
+                href="https://store.steampowered.com/app/3066100/Feeding_The_Velociraptors/"
+                target="_blank"
+                rel="noopener"
+            >
+                View on Steam
+            </a>
+
+            <a
+                class="button secondary"
+                href="#contact"
+            >
+                Press Contact
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================== -->
+
+    <nav>
+
+        <div class="nav-inner">
+
+            <a href="#factsheet">Factsheet</a>
+            <a href="#description">Description</a>
+            <a href="#features">Features</a>
+            <a href="#videos">Videos</a>
+            <a href="#screenshots">Screenshots</a>
+            <a href="#downloads">Downloads</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+    <main>
+
+        <!-- =====================================================
+             FACTSHEET
+        ====================================================== -->
+
+        <section id="factsheet">
+
+            <h2>Factsheet</h2>
+
+            <div class="factsheet">
+
+                <div class="fact">
+                    <span class="fact-label">Title</span>
+                    <span class="fact-value">
+                        Feeding The Velociraptors
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <span class="fact-label">Developer</span>
+                    <span class="fact-value">
+                        workHate Inc
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <span class="fact-label">Publisher</span>
+                    <span class="fact-value">
+                        workHate Inc
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <span class="fact-label">Release Date</span>
+                    <span class="fact-value">
+                        30 January 2026
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <span class="fact-label">Platform</span>
+                    <span class="fact-value">
+                        Windows PC
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <span class="fact-label">Genre</span>
+                    <span class="fact-value">
+                        Adventure / Indie / RPG / Simulation
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <span class="fact-label">Players</span>
+                    <span class="fact-value">
+                        Single-player
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <span class="fact-label">Playtime</span>
+                    <span class="fact-value">
+                        Approximately 5 hours
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <span class="fact-label">Engine</span>
+                    <span class="fact-value">
+                        Ren'Py
+                    </span>
+                </div>
+
+                <div class="fact">
+                    <span class="fact-label">Steam</span>
+                    <span class="fact-value">
+                        <a
+                            href="https://store.steampowered.com/app/3066100/Feeding_The_Velociraptors/"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Steam Store Page
+                        </a>
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             DESCRIPTION
+        ====================================================== -->
+
+        <section id="description">
+
+            <h2>Description</h2>
+
+            <div class="two-column">
+
+                <div>
+
+                    <h3>Short Description</h3>
+
+                    <p class="lead">
+                        A short, press-friendly description of the game
+                        goes here. Keep this to roughly 2–4 sentences.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>Long Description</h3>
+
+                    <p>
+                        Replace this text with the main description
+                        journalists can use when writing about the game.
+                    </p>
+
+                    <p>
+                        Describe the premise, setting, player character,
+                        tone and overall experience without requiring the
+                        reader to know anything about the game beforehand.
+                    </p>
+
+                    <p>
+                        This section can be several paragraphs long.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FEATURES
+        ====================================================== -->
+
+        <section id="features">
+
+            <h2>Features</h2>
+
+            <div class="features">
+
+                <div class="feature">
+                    <h3>Exploration</h3>
+                    <p>
+                        Describe the areas players can explore.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Investigation</h3>
+                    <p>
+                        Describe the evidence, clues or investigative
+                        mechanics.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Choices & Endings</h3>
+                    <p>
+                        Describe the game's choices and branching
+                        outcomes.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Velociraptors</h3>
+                    <p>
+                        You probably want to say something about the
+                        velociraptors here.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             STORY
+        ====================================================== -->
+
+        <section id="story">
+
+            <h2>The Story</h2>
+
+            <p class="lead">
+                Add a spoiler-light overview of the game's premise here.
+            </p>
+
+            <p>
+                Introduce the player character and their situation.
+                Explain the central problem that drives the game.
+            </p>
+
+            <p>
+                Keep major twists and endings out of this section unless
+                you specifically want a spoiler-friendly press kit.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             GAMEPLAY
+        ====================================================== -->
+
+        <section id="gameplay">
+
+            <h2>Gameplay</h2>
+
+            <div class="two-column">
+
+                <div>
+
+                    <h3>Explore</h3>
+
+                    <p>
+                        Describe exploration and environmental
+                        interaction.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>Investigate</h3>
+
+                    <p>
+                        Describe investigation and evidence gathering.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>Survive</h3>
+
+                    <p>
+                        Describe the danger posed by the velociraptors
+                        and other threats.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>Make Your Choice</h3>
+
+                    <p>
+                        Describe choices, consequences and multiple
+                        endings.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             VIDEOS
+        ====================================================== -->
+
+        <section id="videos">
+
+            <h2>Videos</h2>
+
+            <h3>Trailer</h3>
+
+            <div class="video">
+
+                <!--
+                    Replace VIDEO_ID with the YouTube video ID.
+
+                    Example:
+                    https://www.youtube.com/watch?v=abc123
+
+                    becomes:
+
+                    https://www.youtube.com/embed/abc123
+                -->
+
+                <iframe
+                    src="https://www.youtube.com/embed/VIDEO_ID"
+                    title="Feeding The Velociraptors Trailer"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+            <p>
+                <a
+                    href="https://www.youtube.com/"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    Watch on YouTube
+                </a>
+            </p>
+
+            <!-- Add additional videos here if required. -->
+
+        </section>
+
+
+        <!-- =====================================================
+             SCREENSHOTS
+        ====================================================== -->
+
+        <section id="screenshots">
+
+            <h2>Screenshots</h2>
+
+            <div class="gallery">
+
+                <a href="assets/screenshots/screenshot-01.jpg"
+                   target="_blank">
+                    <img
+                        src="assets/screenshots/screenshot-01.jpg"
+                        alt="Feeding The Velociraptors screenshot 1">
+                </a>
+
+                <a href="assets/screenshots/screenshot-02.jpg"
+                   target="_blank">
+                    <img
+                        src="assets/screenshots/screenshot-02.jpg"
+                        alt="Feeding The Velociraptors screenshot 2">
+                </a>
+
+                <a href="assets/screenshots/screenshot-03.jpg"
+                   target="_blank">
+                    <img
+                        src="assets/screenshots/screenshot-03.jpg"
+                        alt="Feeding The Velociraptors screenshot 3">
+                </a>
+
+                <a href="assets/screenshots/screenshot-04.jpg"
+                   target="_blank">
+                    <img
+                        src="assets/screenshots/screenshot-04.jpg"
+                        alt="Feeding The Velociraptors screenshot 4">
+                </a>
+
+                <a href="assets/screenshots/screenshot-05.jpg"
+                   target="_blank">
+                    <img
+                        src="assets/screenshots/screenshot-05.jpg"
+                        alt="Feeding The Velociraptors screenshot 5">
+                </a>
+
+                <a href="assets/screenshots/screenshot-06.jpg"
+                   target="_blank">
+                    <img
+                        src="assets/screenshots/screenshot-06.jpg"
+                        alt="Feeding The Velociraptors screenshot 6">
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             KEY ART
+        ====================================================== -->
+
+        <section id="artwork">
+
+            <h2>Artwork</h2>
+
+            <div class="gallery">
+
+                <a href="assets/artwork/key-art.jpg"
+                   target="_blank">
+                    <img
+                        src="assets/artwork/key-art.jpg"
+                        alt="Feeding The Velociraptors key art">
+                </a>
+
+                <a href="assets/artwork/logo.png"
+                   target="_blank">
+                    <img
+                        src="assets/artwork/logo.png"
+                        alt="Feeding The Velociraptors logo">
+                </a>
+
+                <a href="assets/artwork/capsule.jpg"
+                   target="_blank">
+                    <img
+                        src="assets/artwork/capsule.jpg"
+                        alt="Feeding The Velociraptors Steam capsule art">
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             DOWNLOADS
+        ====================================================== -->
+
+        <section id="downloads">
+
+            <h2>Press Assets</h2>
+
+            <p>
+                Downloadable assets for use in articles, videos,
+                previews and other press coverage.
+            </p>
+
+            <div class="downloads">
+
+                <div class="download">
+
+                    <h3>All Assets</h3>
+
+                    <p>
+                        Complete press kit containing screenshots,
+                        artwork, logos and other promotional assets.
+                    </p>
+
+                    <a
+                        class="button"
+                        href="assets/Feeding-The-Velociraptors-Press-Kit.zip"
+                        download
+                    >
+                        Download ZIP
+                    </a>
+
+                </div>
+
+                <div class="download">
+
+                    <h3>Screenshots</h3>
+
+                    <p>
+                        High-resolution screenshots suitable for
+                        articles and previews.
+                    </p>
+
+                    <a
+                        class="button secondary"
+                        href="assets/screenshots.zip"
+                        download
+                    >
+                        Download
+                    </a>
+
+                </div>
+
+                <div class="download">
+
+                    <h3>Logos</h3>
+
+                    <p>
+                        Logos in PNG and other formats.
+                    </p>
+
+                    <a
+                        class="button secondary"
+                        href="assets/logos.zip"
+                        download
+                    >
+                        Download
+                    </a>
+
+                </div>
+
+                <div class="download">
+
+                    <h3>Artwork</h3>
+
+                    <p>
+                        Key art, promotional artwork and other
+                        high-resolution assets.
+                    </p>
+
+                    <a
+                        class="button secondary"
+                        href="assets/artwork.zip"
+                        download
+                    >
+                        Download
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ABOUT THE DEVELOPER
+        ====================================================== -->
+
+        <section id="developer">
+
+            <h2>About workHate Inc</h2>
+
+            <p>
+                Replace this with a short biography of yourself or
+                workHate Inc.
+            </p>
+
+            <p>
+                This can include information about previous games,
+                your background, the studio and what you are currently
+                working on.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             REVIEWS / PRESS
+        ====================================================== -->
+
+        <section id="press">
+
+            <h2>Press & Reviews</h2>
+
+            <!--
+                Delete this entire section if you don't have press
+                coverage yet.
+            -->
+
+            <blockquote>
+                "[Review quote goes here.]"
+            </blockquote>
+
+            <p>
+                — <a href="#">Publication Name</a>
+            </p>
+
+            <blockquote>
+                "[Another review quote goes here.]"
+            </blockquote>
+
+            <p>
+                — <a href="#">Publication Name</a>
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONTACT
+        ====================================================== -->
+
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <div class="contact">
+
+                <p>
+                    For press enquiries, review copies, interviews or
+                    additional information:
+                </p>
+
+                <p>
+                    <strong>workHate Inc</strong>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:YOUR_EMAIL@example.com">
+                        YOUR_EMAIL@example.com
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Steam:</strong>
+                    <a
+                        href="https://store.steampowered.com/app/3066100/Feeding_The_Velociraptors/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Feeding The Velociraptors
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Website:</strong>
+                    <a href="#">
+                        Your Website
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Social:</strong>
+                    <a href="#">Bluesky</a>
+                    ·
+                    <a href="#">Twitter / X</a>
+                    ·
+                    <a href="#">YouTube</a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer>
+
+        <p>
+            Feeding The Velociraptors
+        </p>
+
+        <p>
+            © 2026 workHate Inc
+        </p>
+
+        <p>
+            Press kit last updated:
+            <strong>September 2026</strong>
+        </p>
+
+    </footer>
+
+</body>
+</html>
